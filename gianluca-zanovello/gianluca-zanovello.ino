@@ -52,6 +52,19 @@ void setup() {
   while(Serial.available() == 0){}; 
   input=Serial.readString(); 
   tempoTraLampeggi=input.toInt();
+   tempoRosso = tempoSemaforo-tempoGiallo;
+  tempoVerde = tempoRosso - lampeggiVerde * tempoTraLampeggi * 2;
+}
+
+void loop() {
+ 
+void semaforoSerie(int rosso1,int giallo1,int verde1,int rosso2,int giallo2,int verde2);
+void semaforoSerie(int rosso2,int giallo2,int verde2,int rosso1,int giallo1,int verde1);
+ }
+
+
+
+}
 
 
  
