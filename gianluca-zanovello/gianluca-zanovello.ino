@@ -73,6 +73,21 @@ void lampeggiaVerde(int verde)
 digitalWrite(verde,LOW);
 }
 
+void semaforoSerie(int rosso1,int giallo1,int verde1,int rosso2,int giallo2,int verde2)
+{digitalWrite(rosso1,HIGH);
+digitalWrite(verde2,HIGH);
+delay(tempoVerde); 
+lampeggiaVerde(verde2);
+digitalWrite(verde2,LOW);
+digitalWrite(giallo1,HIGH);
+digitalWrite(giallo2,HIGH);
+delay(tempoGiallo);
+digitalWrite(giallo1,LOW);
+digitalWrite(giallo2,LOW);
+digitalWrite(rosso1,LOW);
 
+
+
+}
 
  
