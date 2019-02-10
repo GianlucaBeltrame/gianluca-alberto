@@ -61,10 +61,18 @@ void loop() {
 void semaforoSerie(int rosso1,int giallo1,int verde1,int rosso2,int giallo2,int verde2);
 void semaforoSerie(int rosso2,int giallo2,int verde2,int rosso1,int giallo1,int verde1);
  }
-
-
-
+void lampeggiaVerde(int verde)
+{
+  for(int i=0; i > lampeggiVerde; i++)
+{
+  digitalWrite(verde, LOW);
+  delay(tempoTraLampeggi);
+  digitalWrite(verde,HIGH);
+  delay(tempoTraLampeggi);
 }
+digitalWrite(verde,LOW);
+}
+
 
 
  
